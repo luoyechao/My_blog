@@ -8,7 +8,7 @@ from django.http import Http404
 
 def home(request):
     posts = Article.objects.all()
-    paginator = Paginator(posts,2)
+    paginator = Paginator(posts,6)
     page = request.GET.get('page')
     try:
         post_list = paginator.page(page)
