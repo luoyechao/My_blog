@@ -6,7 +6,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'my_blog_1.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^whatishoutai/', include(admin.site.urls)),
     url(r'^$','article.views.home',name='home'),
     url(r'^(?P<id>\d+)/$','article.views.detail',name='detail'),
     url(r'^ckeditor/',include('ckeditor_uploader.urls')),
