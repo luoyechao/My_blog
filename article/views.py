@@ -4,6 +4,8 @@ from article.models import Article
 from datetime import datetime
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 from django.http import Http404
+from markdown import markdown
+from django.shortcuts import redirect
 # Create your views here.
 
 def home(request):
@@ -22,6 +24,12 @@ def home(request):
 def detail(request,id):
     try:
         post = Article.objects.get(id=str(id))
+        post.content = markdown(post.content,extensions=[
+                                                 'markdown.extensions.extra',
+                                                 'markdown.extensions.codehilite',
+                                                 'markdown.extensions.toc',
+                                                 ])
+        #post.content = markdown(post.content,['codehilite'])
     except Article.DoesNotExist:
         raise Http404
     return render(request,'post.html',{'post':post})
@@ -54,4 +62,4 @@ def blog_search(request):
             else:
                 return render(request,'archives.html',{'post_list':post_list,'error':False})
 
-    return redict('/')
+    return redirect('/')

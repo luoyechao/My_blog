@@ -18,7 +18,7 @@
                 <h2 class="post-title">{{ post.title }}</h2>
 
                     <p class="post-meta">
-            时间:  <a class="hover" href="#">{{ post.date_time|date:"Y M d"}}</a> <a class="hover" href="{% url "search_tag" tag=post.category %}">{{ post.category }}</a>
+            时间:  <a class="hover" href="#">{{ post.pub_date|date:"Y M d"}}</a> <a class="hover" href="{% url "search_tag" tag=post.category %}">{{ post.category }}</a>
                     </p>
             </header>
 
