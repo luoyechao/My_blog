@@ -1,40 +1,59 @@
 {% extends "base.html" %}
 
-{% load custom_markdown %}
 {% block content %}
+<link rel="stylesheet" href="/static/1.css" type="text/css" />
+
 <div class="posts">
     {% for post in post_list %}
         <section class="post">
             <header class="post-header">
-                <h2 class="post-title"><a href="{% url "detail" id=post.id %}">{{ post.title }}</a></h2>
+            <h3 class="div-inline">{{ post.date_time |date:"Y M d"}}</h3>
+                <h2 class="div-inline text-c ml-30"><a class ="hover" href="{% url "detail" id=post.id %}">{{ post.title }}</a></h2>
+                <div class="mt-10"></div>
 
-                    <p class="post-meta">
-                        Time:  <a class="post-author" href="#">{{ post.pub_date |date:"Y M d"}}</a> <a class="post-category post-category-js" href="{% url "search_tag" tag=post.category %}">{{ post.category|title }}</a>
-                    </p>
+
             </header>
 
-                <div class="post-description">
+<!--                 <div class="post-description">
                     <p>
-                        {{ post.content|custom_markdown|truncatewords:10 }}
+                        {{ post.content|truncatewords:10 }}
                     </p>
                 </div>
-                <a class="pure-button" href="{% url "detail" id=post.id %}">Read More >>> </a>
+                <a class="pure-button" href="{% url "detail" id=post.id %}">Read More >>> </a> -->
         </section>
     {% endfor %}
 
-    {% if post_list.object_list and post_list.paginator.num_pages > 1 %}
-      <div>
-      <ul class="pager">
-      {% if post_list.has_previous %}
-        <li><a href="?page={{ post_list.previous_page_number }}">上一页</a></li>
+    <!-- {% if post_list.object_list and post_list.paginator.num_pages > 1 %}
+      <div class="">
+      
+      {%if post_list.has_previous and post_list.has_next %}
+        <li class="div-inline "><a class="hover" href="?page={{ post_list.previous_page_number }}">上一页</a></li>
+        <li class="div-inline bl-10"><a  class="hover" href="?page={{ post_list.next_page_number }}">下一页</a></li>
       {% endif %}
 
-      {% if post_list.has_next %}
-        <li><a href="?page={{ post_list.next_page_number }}">下一页</a></li>
+      {% if post_list.has_previous and not post_list.has_next %}
+        <li class="div-inline "><a class="hover" href="?page={{ post_list.previous_page_number }}">上一页</a></li>
+         <li class="div-inline bl-10"><a  class="hover" href="#">下一页</a></li>
       {% endif %}
-      </ul>
+
+      {% if post_list.has_next and not post_list.has_previous %}
+      <li class="div-inline "><a class="hover" href="#">上一页</a></li>
+        <li class="div-inline bl-10"><a  class="hover" href="?page={{ post_list.next_page_number }}">下一页</a></li>
+      {% endif %}
+      
       </div>
-    {% endif %}
+    {% endif %} -->
 </div><!-- /.blog-post -->
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
 

@@ -1,22 +1,36 @@
-{% extends "base.html" %}
+
 {% load custom_markdown %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>seana</title>
+    <link rel="stylesheet" href="/static/1.css" type="text/css" />
+    <link rel="stylesheet" href="/static/pygment/colorful.css" type="text/css">
+
+</head>
+<body>
 
 {% block content %}
-<div class="posts">
+<div class="">
+<div class="bl-20 br-20 ">
         <section class="post">
             <header class="post-header">
                 <h2 class="post-title">{{ post.title }}</h2>
 
                     <p class="post-meta">
-		    Times:  <a class="post-author" href="#">{{ post.pub_date|date:"Y M d"}}</a> <a class="post-category post-category-js" href="{% url "search_tag" tag=post.category %}">{{ post.category }}</a>
+            时间:  <a class="hover" href="#">{{ post.date_time|date:"Y M d"}}</a> <a class="hover" href="{% url "search_tag" tag=post.category %}">{{ post.category }}</a>
                     </p>
             </header>
 
                 <div class="post-description">
                     <p>
-                        {{ post.content|custom_markdown }}
+                        {{ post.content | safe}}
                     </p>
                 </div>
         </section>
-</div><!-- /.blog-post -->
+</div>
 {% endblock %}
+</div>
+
+</body>
+</html>

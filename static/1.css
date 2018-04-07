@@ -1,0 +1,466 @@
+h1,h2,h3,h4,h5,h6{font-weight:500;line-height:1.1;color:inherit}
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,h1 .small,h2 .small,h3 .small,h4 .small,h5 .small,h6 .small{font-weight:normal;line-height:1;color:#999}
+h1,h2,h3{margin-top:20px;margin-bottom:10px}
+h1 small,h2 small,h3 small,h1 .small,h2 .small,h3 .small{font-size:65%}
+h4,h5,h6{margin-top:10px;margin-bottom:10px}
+h4 small,h5 small,h6 small,h4 .small,h5 .small,h6 .small{font-size:75%}
+h1{font-size:36px}
+h2{font-size:30px}
+h3{font-size:24px}
+h4{font-size:18px}
+h5{font-size:14px}
+h6{font-size:12px}
+
+
+.quan{height: 100%;width: 100%;background:yellow;}
+.bl-12{margin-left: 12%}
+.bl-15{margin-left: 15%}
+.bl-10{margin-left: 10%}
+.bl-5{margin-left: 5%}
+.bl-20{margin-left: 20%}
+.bl-25{margin-left: 25%}
+.bl-60{margin-left: 60%}
+.bl-30{margin-left: 30%}
+.bl-35{margin-left: 35%}
+.bl-50{margin-left: 60%}
+
+
+.br-10{margin-right: 10%}
+.br-12{margin-right: 12%}
+.br-15{margin-right: 15%}
+.br-20{margin-right: 20%}
+.br-40{margin-right: 60%}
+.br-60{margin-right: 60%}
+
+     
+.divc{background:black;}
+
+.hover{color:blue ; text-decoration:none;}/*鼠标经过变成红色*/
+
+.text-l{text-align:left}/*水平居左*/
+.text-r{text-align:right}/*水平居中*/
+.text-c{text-align:center}/*水平居右*/
+.va *{vertical-align:sub!important;*vertical-align:middle!important;_vertical-align:middle!important}
+.va-t{ vertical-align:top!important}/*上下居顶*/
+.va-m{ vertical-align:middle!important}/*上下居中*/
+.va-b{ vertical-align:bottom!important}/*上下居底*/
+
+.f-l{float:left!important;_display:inline}
+.f-r{float:right!important;_display:inline}
+
+
+
+.mt-5{margin-top:5px}/*距上5像素*/
+.mt-10{margin-top:10px}/*距上10像素*/
+.mt-15{margin-top:15px}/*距上15像素*/
+.mt-20{margin-top:20px}/*距上20像素*/
+.mt-25{margin-top:25px}/*距上25像素*/
+.mt-30{margin-top:30px}/*距上30像素*/
+.mt-35{margin-top:35px}/*距上35像素*/
+.mt-40{margin-top:40px}/*距上40像素*/
+.mt-50{margin-top:50px}/*距上50像素*/
+.div-inline{ display:inline} 
+.mb-5{margin-bottom:5px}/*距下5像素*/
+.mb-10{margin-bottom:10px}/*距下10像素*/
+.mb-15{margin-bottom:15px}/*距下15像素*/
+.mb-20{margin-bottom:20px}/*距下20像素*/
+.mb-25{margin-bottom:25px}/*距下25像素*/
+.mb-30{margin-bottom:30px}/*距下30像素*/
+.mb-35{margin-bottom:35px}/*距下35像素*/
+.mb-40{margin-bottom:40px}/*距下40像素*/
+.mb-50{margin-bottom:50px}/*距下50像素*/
+ 
+.ml-5{margin-left:5px}/*距左5像素*/
+.ml-10{margin-left:10px}/*距左10像素*/
+.ml-15{margin-left:15px}/*距左15像素*/
+.ml-20{margin-left:20px}/*距左20像素*/
+.ml-30{margin-left:30px}/*距左30像素*/
+.ml-40{margin-left:40px}/*距左40像素*/
+.ml-50{margin-left:50px}/*距左50像素*/
+.ml-150{margin-left:150px}/*距左50像素*/
+.ml-230{margin-left:230px}/*距左50像素*/
+.ml-200{margin-left:200px}/*距左50像素*/
+.ml-250{margin-left:250px}/*距左50像素*/
+
+.ml-420{margin-left:420px}/*距左50像素*/
+.ml-500{margin-left:600px}/*距左50像素*/
+
+ 
+.mr-5{margin-right:5px}/*距右5像素*/
+.mr-10{margin-right:10px}/*距右10像素*/
+.mr-15{margin-right:15px}/*距右15像素*/
+.mr-20{margin-right:20px}/*距右20像素*/
+.mr-30{margin-right:30px}/*距右30像素*/
+.mr-40{margin-right:40px}/*距右40像素*/
+.mr-50{margin-right:50px}/*距右50像素*/
+
+
+.pt-5{padding-top:5px}/*上填充5像素*/
+.pt-10{padding-top:10px}/*上填充10像素*/
+.pt-15{padding-top:15px}/*上填充15像素*/
+.pt-20{padding-top:20px}/*上填充20像素*/
+ 
+.pb-5{padding-bottom:5px}/*下填充5像素*/
+.pb-10{padding-bottom:10px}/*下填充10像素*/
+.pb-15{padding-bottom:15px}/*下填充15像素*/
+.pb-20{padding-bottom:20px}/*下填充20像素*/
+ 
+.pl-5{padding-left:5px}/*左填充5像素*/
+.pl-10{padding-left:10px}/*左填充10像素*/
+.pl-15{padding-left:15px}/*左填充15像素*/
+.pl-20{padding-left:20px}/*左填充20像素*/
+ 
+.pr-5{padding-right:5px}/*右填充5像素*/
+.pr-10{padding-right:10px}/*右填充10像素*/
+.pr-15{padding-right:15px}/*右填充15像素*/
+.pr-20{padding-right:20px}/*右填充20像素*/
+ 
+.pd-5{padding:5px}/*填充5像素*/
+.pd-10{padding:10px}/*填充10像素*/
+.pd-15{padding:15px}/*填充15像素*/
+.pd-20{padding:20px}/*填充20像素*/
+
+
+.box-shadow{-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.1);box-shadow:0 1px 2px rgba(0,0,0,0.1)}
+.text-shadow{-webkit-text-shadow:0 0 2px rgba(0,0,0,0.2);text-shadow:0 0 2px rgba(0,0,0,0.2)}
+
+.line{ font-size: 0px; line-height: 0px; border-top: solid 1px #ddd; float: none ; width: 80%;}	
+
+
+
+/*主要颜色*/
+.c-primary,.c-primary a,a.c-primary{color:#5a98de}
+.c-primary a:hover,a.c-primary:hover{ color:#5a98de}
+ 
+/*次主色*/
+.c-secondary,.c-secondary a,a.c-secondary{color:#555}
+.c-secondary a:hover,a.c-secondary:hover{ color:#555}
+ 
+/*强调色—成功*/
+.c-success,.c-success a,a.c-success{color:#5eb95e}
+.c-success a:hover,a.c-success:hover{ color:#5eb95e}
+ 
+/*强调色—危险*/
+.c-danger,.c-danger a,a.c-danger{color:#dd514c}
+.c-danger a:hover,a.c-danger:hover{ color:#dd514c}
+ 
+/*强调色—警告*/
+.c-warning,.c-warning a,a.c-warning{color:#f37b1d}
+.c-warning a:hover,a.c-warning:hover{ color:#f37b1d}
+ 
+/*强调色—错误*/
+.c-error,.c-error a,a.c-error{color:#c00}
+.c-error a:hover,a.c-error:hover{ color:#c00}
+ 
+/*辅助色—浅黑*/
+.c-333,.c-333 a,a.c-333{color:#333}
+.c-333 a:hover,a.c-333:hover{ color:#333}
+ 
+/*辅助色—灰色*/
+.c-666,.c-666 a,a.c-666{color:#666}
+.c-666 a:hover,a.c-666:hover{ color:#666}
+.c-999,.c-999 a,a.c-999{color:#999}
+.c-999 a:hover,a.c-999:hover{color:#999}
+ 
+/*标准色—红色*/
+.c-red,.c-red a,a.c-red{color:red}
+.c-red a:hover,a.c-red:hover{ color:red}
+ 
+/*标准色—绿色*/
+.c-green,.c-green a,a.c-green{color:green}
+.c-red a:hover,a.c-red:hover{color:green}
+ 
+/*标准色—蓝色*/
+.c-blue,.c-blue a,a.c-blue{color:blue}
+.c-blue a:hover,a.c-blue:hover{color:blue}
+ 
+/*标准色—白色*/
+.c-white,.c-white a,a.c-white{color:white}
+.c-white a:hover,a.c-white:hover{color:white}
+ 
+/*标准色—黑色*/
+.c-black,.c-black a{color:black}
+.c-black a:hover,a.c-black:hover{color:black}
+ 
+/*标准色—橙色*/
+.c-orange,.c-orange a,a.c-orange{color:orange}
+.c-orange a:hover,a.c-orange:hover{color:orange}
+.btn-group{ font-size:0}
+.btn-group .btn{ margin-left:-1px}
+.btn-group .btn:not(:first-child):not(:last-child):not(.dropdown-toggle){ border-radius:0}
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle){border-bottom-right-radius: 0;border-top-right-radius: 0}
+.btn-group > .btn:last-child:not(:first-child),.btn-group > .dropdown-toggle:not(:first-child) {border-bottom-left-radius: 0;border-top-left-radius: 0}
+
+
+.bk-gray{border:solid 10px #ddd}
+.radius{border-radius:10px; overflow:hidden}
+.size-MINI.radius{ border-radius:3px}
+.size-L.radius{ border-radius:5px}
+.size-XL.radius{ border-radius:6px}
+.round{border-radius:1000px; overflow:hidden}
+.circle{ border-radius:50%; overflow:hidden}
+
+
+
+
+.footer{border-top:1px solid #E8E8E8; padding:15px 0;font-family:tahoma,Arial;font-size:12px;color:#999;line-height:22px;text-align:center}
+.footer a,.footer a:hover{color:#999}
+
+.footer1{
+	/*border-top:1px solid #E8E8E8;*/ 
+	padding:15px 0;font-family:tahoma,Arial;
+	font-size:12px;color:#999;
+	line-height:22px;text-align:center}
+
+
+.font-10{font-size: 50%}
+
+
+
+
+
+
+
+
+/*相应*/
+.container-fluid{ width:100%}
+.container {padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto}
+@media ( min-width : 768px) {
+	.container {width: 750px}
+}
+@media ( min-width : 992px) {
+	.container {width: 970px}
+}
+@media ( min-width : 1200px) {
+	.container {width: 1170px}
+}
+@media ( min-width : 1300px) {
+	.container {width: 1270px}
+}
+@media ( min-width : 1400px) {
+	.container {width: 95%}
+}
+@media print{
+	.container{width:auto}
+}
+.row.cl{}
+.row{box-sizing:border-box; margin-left:-15px; margin-right:-15px}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {min-height: 1px;position: relative; padding-left:15px; padding-right:15px; box-sizing:border-box;
+	-webkit-transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	-o-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {float: left}
+.col-xs-12 {width: 100%}
+.col-xs-11 {width: 91.66666667%}
+.col-xs-10 {width: 83.33333333%}
+.col-xs-9 {width: 75%}
+.col-xs-8 {width: 66.66666667%}
+.col-xs-7 {width: 58.33333333%}
+.col-xs-6 {width: 50%}
+.col-xs-5 {width: 41.66666667%}
+.col-xs-4 {width: 33.33333333%}
+.col-xs-3 {width: 25%}
+.col-xs-2 {width: 16.66666667%}
+.col-xs-1 {width: 8.33333333%}
+.col-xs-pull-12 {right: 100%}
+.col-xs-pull-11 {right: 91.66666667%}
+.col-xs-pull-10 {right: 83.33333333%}
+.col-xs-pull-9 {right: 75%}
+.col-xs-pull-8 {right: 66.66666667%}
+.col-xs-pull-7 {right: 58.33333333%}
+.col-xs-pull-6 {right: 50%}
+.col-xs-pull-5 {right: 41.66666667%}
+.col-xs-pull-4 {right: 33.33333333%}
+.col-xs-pull-3 {right: 25%}
+.col-xs-pull-2 {right: 16.66666667%}
+.col-xs-pull-1 {right: 8.33333333%}
+.col-xs-pull-0 {right: auto}
+.col-xs-push-12 {left: 100%}
+.col-xs-push-11 {left: 91.66666667%}
+.col-xs-push-10 {left: 83.33333333%}
+.col-xs-push-9 {left: 75%}
+.col-xs-push-8 {left: 66.66666667%}
+.col-xs-push-7 {left: 58.33333333%}
+.col-xs-push-6 {left: 50%}
+.col-xs-push-5 {left: 41.66666667%}
+.col-xs-push-4 {left: 33.33333333%}
+.col-xs-push-3 {left: 25%}
+.col-xs-push-2 {left: 16.66666667%}
+.col-xs-push-1 {left: 8.33333333%}
+.col-xs-push-0 {left: auto}
+.col-xs-offset-12 {margin-left: 100%}
+.col-xs-offset-11 {margin-left: 91.66666667%}
+.col-xs-offset-10 {margin-left: 83.33333333%}
+.col-xs-offset-9 {margin-left: 75%}
+.col-xs-offset-8 {margin-left: 66.66666667%}
+.col-xs-offset-7 {margin-left: 58.33333333%}
+.col-xs-offset-6 {margin-left: 50%}
+.col-xs-offset-5 {margin-left: 41.66666667%}
+.col-xs-offset-4 {margin-left: 33.33333333%}
+.col-xs-offset-3 {margin-left: 25%}
+.col-xs-offset-2 {margin-left: 16.66666667%}
+.col-xs-offset-1 {margin-left: 8.33333333%}
+.col-xs-offset-0 {margin-left: 0}
+@media(min-width:768px){
+	.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{float:left}
+	.col-sm-12{width:100%}
+	.col-sm-11{width:91.66666666666666%}
+	.col-sm-10{width:83.33333333333334%}
+	.col-sm-9{width:75%}
+	.col-sm-8{width:66.66666666666666%}
+	.col-sm-7{width:58.333333333333336%}
+	.col-sm-6{width:50%}
+	.col-sm-5{width:41.66666666666667%}
+	.col-sm-4{width:33.33333333333333%}
+	.col-sm-3{width:25%}
+	.col-sm-2{width:16.666666666666664%}
+	.col-sm-1{width:8.333333333333332%}
+	.col-sm-pull-12{right:100%}
+	.col-sm-pull-11{right:91.66666666666666%}
+	.col-sm-pull-10{right:83.33333333333334%}
+	.col-sm-pull-9{right:75%}
+	.col-sm-pull-8{right:66.66666666666666%}
+	.col-sm-pull-7{right:58.333333333333336%}
+	.col-sm-pull-6{right:50%}
+	.col-sm-pull-5{right:41.66666666666667%}
+	.col-sm-pull-4{right:33.33333333333333%}
+	.col-sm-pull-3{right:25%}
+	.col-sm-pull-2{right:16.666666666666664%}
+	.col-sm-pull-1{right:8.333333333333332%}
+	.col-sm-pull-0{right:0}
+	.col-sm-push-12{left:100%}
+	.col-sm-push-11{left:91.66666666666666%}
+	.col-sm-push-10{left:83.33333333333334%}
+	.col-sm-push-9{left:75%}
+	.col-sm-push-8{left:66.66666666666666%}
+	.col-sm-push-7{left:58.333333333333336%}
+	.col-sm-push-6{left:50%}
+	.col-sm-push-5{left:41.66666666666667%}
+	.col-sm-push-4{left:33.33333333333333%}
+	.col-sm-push-3{left:25%}
+	.col-sm-push-2{left:16.666666666666664%}
+	.col-sm-push-1{left:8.333333333333332%}
+	.col-sm-push-0{left:0}
+	.col-sm-offset-12{margin-left:100%}
+	.col-sm-offset-11{margin-left:91.66666666666666%}
+	.col-sm-offset-10{margin-left:83.33333333333334%}
+	.col-sm-offset-9{margin-left:75%}
+	.col-sm-offset-8{margin-left:66.66666666666666%}
+	.col-sm-offset-7{margin-left:58.333333333333336%}
+	.col-sm-offset-6{margin-left:50%}
+	.col-sm-offset-5{margin-left:41.66666666666667%}
+	.col-sm-offset-4{margin-left:33.33333333333333%}
+	.col-sm-offset-3{margin-left:25%}
+	.col-sm-offset-2{margin-left:16.666666666666664%}
+	.col-sm-offset-1{margin-left:8.333333333333332%}
+	.col-sm-offset-0{margin-left:0}
+}
+@media(min-width:992px){
+	.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9{float:left}
+	.col-md-12{width:100%}
+	.col-md-11{width:91.66666666666666%}
+	.col-md-10{width:83.33333333333334%}
+	.col-md-9{width:75%}
+	.col-md-8{width:66.66666666666666%}
+	.col-md-7{width:58.333333333333336%}
+	.col-md-6{width:50%}
+	.col-md-5{width:41.66666666666667%}
+	.col-md-4{width:33.33333333333333%}
+	.col-md-3{width:25%}
+	.col-md-2{width:16.666666666666664%}
+	.col-md-1{width:8.333333333333332%}
+	.col-md-pull-12{right:100%}
+	.col-md-pull-11{right:91.66666666666666%}
+	.col-md-pull-10{right:83.33333333333334%}
+	.col-md-pull-9{right:75%}
+	.col-md-pull-8{right:66.66666666666666%}
+	.col-md-pull-7{right:58.333333333333336%}
+	.col-md-pull-6{right:50%}
+	.col-md-pull-5{right:41.66666666666667%}
+	.col-md-pull-4{right:33.33333333333333%}
+	.col-md-pull-3{right:25%}
+	.col-md-pull-2{right:16.666666666666664%}
+	.col-md-pull-1{right:8.333333333333332%}
+	.col-md-pull-0{right:0}
+	.col-md-push-12{left:100%}
+	.col-md-push-11{left:91.66666666666666%}
+	.col-md-push-10{left:83.33333333333334%}
+	.col-md-push-9{left:75%}
+	.col-md-push-8{left:66.66666666666666%}
+	.col-md-push-7{left:58.333333333333336%}
+	.col-md-push-6{left:50%}
+	.col-md-push-5{left:41.66666666666667%}
+	.col-md-push-4{left:33.33333333333333%}
+	.col-md-push-3{left:25%}
+	.col-md-push-2{left:16.666666666666664%}
+	.col-md-push-1{left:8.333333333333332%}
+	.col-md-push-0{left:0}
+	.col-md-offset-12{margin-left:100%}
+	.col-md-offset-11{margin-left:91.66666666666666%}
+	.col-md-offset-10{margin-left:83.33333333333334%}
+	.col-md-offset-9{margin-left:75%}
+	.col-md-offset-8{margin-left:66.66666666666666%}
+	.col-md-offset-7{margin-left:58.333333333333336%}
+	.col-md-offset-6{margin-left:50%}
+	.col-md-offset-5{margin-left:41.66666666666667%}
+	.col-md-offset-4{margin-left:33.33333333333333%}
+	.col-md-offset-3{margin-left:25%}
+	.col-md-offset-2{margin-left:16.666666666666664%}
+	.col-md-offset-1{margin-left:8.333333333333332%}
+	.col-md-offset-0{margin-left:0}
+}
+@media(min-width:1200px){
+	.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{float:left}
+	.col-lg-12{width:100%}
+	.col-lg-11{width:91.66666666666666%}
+	.col-lg-10{width:83.33333333333334%}
+	.col-lg-9{width:75%}
+	.col-lg-8{width:66.66666666666666%}
+	.col-lg-7{width:58.333333333333336%}
+	.col-lg-6{width:50%}
+	.col-lg-5{width:41.66666666666667%}
+	.col-lg-4{width:33.33333333333333%}
+	.col-lg-3{width:25%}
+	.col-lg-2{width:16.666666666666664%}
+	.col-lg-1{width:8.333333333333332%}
+	.col-lg-pull-12{right:100%}
+	.col-lg-pull-11{right:91.66666666666666%}
+	.col-lg-pull-10{right:83.33333333333334%}
+	.col-lg-pull-9{right:75%}
+	.col-lg-pull-8{right:66.66666666666666%}
+	.col-lg-pull-7{right:58.333333333333336%}
+	.col-lg-pull-6{right:50%}
+	.col-lg-pull-5{right:41.66666666666667%}
+	.col-lg-pull-4{right:33.33333333333333%}
+	.col-lg-pull-3{right:25%}
+	.col-lg-pull-2{right:16.666666666666664%}
+	.col-lg-pull-1{right:8.333333333333332%}
+	.col-lg-pull-0{right:0}
+	.col-lg-push-12{left:100%}
+	.col-lg-push-11{left:91.66666666666666%}
+	.col-lg-push-10{left:83.33333333333334%}
+	.col-lg-push-9{left:75%}
+	.col-lg-push-8{left:66.66666666666666%}
+	.col-lg-push-7{left:58.333333333333336%}
+	.col-lg-push-6{left:50%}
+	.col-lg-push-5{left:41.66666666666667%}
+	.col-lg-push-4{left:33.33333333333333%}
+	.col-lg-push-3{left:25%}
+	.col-lg-push-2{left:16.666666666666664%}
+	.col-lg-push-1{left:8.333333333333332%}
+	.col-lg-push-0{left:0}
+	.col-lg-offset-12{margin-left:100%}
+	.col-lg-offset-11{margin-left:91.66666666666666%}
+	.col-lg-offset-10{margin-left:83.33333333333334%}
+	.col-lg-offset-9{margin-left:75%}
+	.col-lg-offset-8{margin-left:66.66666666666666%}
+	.col-lg-offset-7{margin-left:58.333333333333336%}
+	.col-lg-offset-6{margin-left:50%}
+	.col-lg-offset-5{margin-left:41.66666666666667%}
+	.col-lg-offset-4{margin-left:33.33333333333333%}
+	.col-lg-offset-3{margin-left:25%}
+	.col-lg-offset-2{margin-left:16.666666666666664%}
+	.col-lg-offset-1{margin-left:8.333333333333332%}
+	.col-lg-offset-0{margin-left:0}
+}			

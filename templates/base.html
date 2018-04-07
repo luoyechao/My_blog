@@ -1,72 +1,104 @@
-<!--base.html-->
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../static/1.css" type="text/css" />
+<!-- <link href="./1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
+ --><head>
+ <link rel="stylesheet" href="../static/pygment/colorful.css" type="text/css" />
+<link href="/static/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
 
-<title>{%block title %}Seana Chao Blog{% endblock %}</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-    <link rel="stylesheet" href="http://picturebag.qiniudn.com/blog.css">
-    <link rel="stylesheet" href="http://picturebag.qiniudn.com/monokai.css">
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Seana's Blog</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-md-1-4">
-        <div class="header">
-            <h1 class="brand-title"><a href="{% url "home" %}">Seana Chao Blog</a></h1>
-            <h2 class="brand-tagline">小小 - Smile</h2>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="/">主页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="/">归档</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pure-button" href="https://github.com/Andrew-liu/my_blog_tutorial">Github</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="button-error pure-button" href="http://weibo.com/dinosaurliu">Weibo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="/">专题</a>
-                    </li>
-		    <li class = "nav-item">
-			<form class = "pure-form" action="/search/" method="get">
-			    <input class="pure-input-3-3" type="text" name="s" placeholder="search">
-			</form>
-		    </li>
-                    <li class="nav-item">
-                        <a class="button-success pure-button" href="/">About Me</a>
 
-                    </li>
-                </ul>
-            </nav>
-        </div>
+<body class="">
+
+	<div class="va-m | text-shadow | c-blue | bl-15 | br-15" ><h1><strong>SeanaChao</strong></h1></div>
+    <h4 class="div-inline text-c | bl-15" >choose the future,walk on</h4>
+     <a href="/" class="Hui-iconfont bl-5" style="font-size: 30px" >&#xe625;</a>
+     <a class="Hui-iconfont ml-10" style="font-size: 30px" href="/archives">&#xe64b;</a>
+     <a class="Hui-iconfont ml-10" style="font-size: 30px" >&#xe681;</a>
+     <a class="Hui-iconfont ml-10" style="font-size: 30px" href="https://luoyechao.github.io">&#xe6d1;</a>
+    <form class="pure-form div-inline " action="/search/" method="get">
+    <input type="text" placeholder="Search in there" class="input-text ac_input bl-15 div-inline bk-gray radius"  name="s" value="" id="search_text" autocomplete="off" style="" width:200px height=50px>
+    <button class="div-inline" type="submit">search</button>
+    </form>
+
     </div>
+    <div class = "mt-20"><HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="70%" color=#987cb9 SIZE=3> </div>
+   <div class="bl-20 "> <h2>Article</h2></div>
 
-
-    <div class="content pure-u-1 pure-u-md-3-4">
+   <div class="bl-25  br-15">
         <div>
             {% block content %}
-            {% endblock %}
-            <div class="footer">
-                <div class="pure-menu pure-menu-horizontal pure-menu-open">
-                    <ul>
-                        <li><a href="http://andrewliu.tk/about/">About Me</a></li>
-                        <li><a href="http://twitter.com/yuilibrary/">Twitter</a></li>
-                        <li><a href="http://github.com/yahoo/pure/">GitHub</a></li>
-                    </ul>
-                </div>
-            </div>
+
+			{% endblock %}
+
+            
         </div>
     </div>
+ {% if post_list.object_list and post_list.paginator.num_pages > 1 %}
+      <div class="bl-15">
+      
+      {%if post_list.has_previous and post_list.has_next %}
+        <li class="div-inline "><a class="hover" href="?page={{ post_list.previous_page_number }}"  data-toggle="tooltip" data-placement="top" title="2333">上一页</a></li>
+        <li class="div-inline bl-50"><a  class="hover" href="?page={{ post_list.next_page_number }}"  data-toggle="tooltip" data-placement="top" title="2333">下一页</a></li>
+      {% endif %}
+
+      {% if post_list.has_previous and not post_list.has_next %}
+        <li class="div-inline "><a class="hover" href="?page={{ post_list.previous_page_number }}"  data-toggle="tooltip" data-placement="top" title="2333">上一页</a></li>
+         <li class="div-inline bl-50"><a  class="hover" href="#"  data-toggle="tooltip" data-placement="top" title="没有下一页了，去看上一页">下一页</a></li>
+      {% endif %}
+
+      {% if post_list.has_next and not post_list.has_previous %}
+      <li class="div-inline "><a class="hover" href="#"  data-toggle="tooltip" data-placement="top" title="没有上一页了，去另一边">上一页</a></li>
+        <li class="div-inline bl-50"><a  class="hover" href="?page={{ post_list.next_page_number }}"  data-toggle="tooltip" data-placement="top" title="2333">下一页</a></li>
+      {% endif %}
+      
+      </div>
+    {% endif %}
+    <script>
+    $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+<!-- <div class="text-c">
+                <div class="">
+                    <ul>
+                        
+                     
+
+
+
+                        <li class="div-inline text-c">
+                        <a class="button-success pure-button" href="/">主页</a>
+                    </li>
+                    <li class="div-inline">
+                        <a class="button-success pure-button" href="/">归档</a>
+                    </li>
+                    <li class="div-inline">
+                        <a class="pure-button" href="/">Github</a>
+                    </li>
+                    <li class="div-inline">
+                        <a class="button-error pure-button" href="/">Weibo</a>
+                    </li>
+                    <li class="div-inline">
+                        <a class="button-success pure-button" href="/">专题</a>
+                    </li>
+                    <li class="div-inline">
+                        <a class="button-success pure-button" href="/">About Me</a>
+                    </li>
+                    </ul>
+                </div>
+            </div> -->
+<footer class="footer1 ">
+    <div class="container-fluid">
+        <nav> <a class="hover" href="#" target="_blank">Github</a> <span class="pipe">|</span> <a  class="hover" href="/aboutme" target="_blank">About Me</a> <span class="pipe">|</span> <a class="hover" href="/" >Home</a> <span class="pipe">|</span><a class = "hover" href='/archives'> Archives</a></nav>
+        <p>Copyright &copy;2018 Seana.net All Rights Reserved. <br>
+            <a class = "hover" href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">京ICP备1000000号</a><br>
+        </p>
+    </div>
+</footer>
 </div>
 
-</body>
-</html>
+</html> 
