@@ -24,11 +24,11 @@ def home(request):
 def detail(request,id):
     try:
         post = Article.objects.get(id=str(id))
-        post.content = markdown(post.content,extensions=[
-                                                 'markdown.extensions.extra',
-                                                 'markdown.extensions.codehilite',
-                                                 'markdown.extensions.toc',
-                                                 ])
+        #post.content = markdown(post.content,extensions=[
+        #                                         'markdown.extensions.extra',
+        #                                         'markdown.extensions.codehilite',
+        #                                         'markdown.extensions.toc',
+        #                                         ])
         #post.content = markdown(post.content,['codehilite'])
     except Article.DoesNotExist:
         raise Http404
