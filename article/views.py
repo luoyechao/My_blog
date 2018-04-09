@@ -10,7 +10,7 @@ from django.shortcuts import redirect
 
 def home(request):
     posts = Article.objects.all()
-    paginator = Paginator(posts,6)
+    paginator = Paginator(posts,10)
     page = request.GET.get('page')
     try:
         post_list = paginator.page(page)
