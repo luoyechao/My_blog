@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>a12{TEXT-DECORATION:none}</style>
 </head>
 
-<body class="">
+<body class="" style="background:#000; color:#FFF">
 
 	<div class="va-m | text-shadow | c-blue | bl-15 | br-15" ><h1><strong>SeanaChao</strong></h1></div>
     <h4 class="div-inline text-c | bl-15" >choose the future,walk on</h4>
@@ -22,13 +23,14 @@
      <a class="Hui-iconfont ml-10" style="font-size: 30px" >&#xe681;</a>
      <a class="Hui-iconfont ml-10" style="font-size: 30px" href="https://luoyechao.github.io">&#xe6d1;</a>
     <form class="pure-form div-inline " action="/search/" method="get">
-    <input type="text" placeholder="Search in there" class="input-text ac_input bl-15 div-inline bk-gray radius"  name="s" value="" id="search_text" autocomplete="off" style="" width:200px height=50px>
-    <button class="div-inline" type="submit">search</button>
+<!--     <input type="text" placeholder="Search in there" class="input-text ac_input bl-15 div-inline  radius"  name="s" value="" id="search_text" autocomplete="off" style="" width:200px height=50px> -->
+    <input type="text" style="background:#000; color:#FFF"  value="Search" class="bl-15" name="s" id="search_text">
+    <button class="div-inline" type="submit" style="background:#000; color:#079">search</button>
     </form>
 
     </div>
-    <div class = "mt-20"><HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="70%" color=#987cb9 SIZE=3> </div>
-   <div class="bl-20 "> <h2>Article</h2></div>
+    <!-- <div class = "mt-20"><HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="70%" color=#987cb9 SIZE=3> </div> -->
+   <div class="bl-20 "> <h3><i>Article</i></h3></div>
 
    <div class="bl-25  br-15">
         <div>
@@ -43,18 +45,18 @@
       <div class="bl-15">
       
       {%if post_list.has_previous and post_list.has_next %}
-        <li class="div-inline "><a class="hover" href="?page={{ post_list.previous_page_number }}"  data-toggle="tooltip" data-placement="top" title="2333">上一页</a></li>
-        <li class="div-inline bl-50"><a  class="hover" href="?page={{ post_list.next_page_number }}"  data-toggle="tooltip" data-placement="top" title="2333">下一页</a></li>
+        <li class="div-inline "><a class="hover a12" href="?page={{ post_list.previous_page_number }}"  data-toggle="tooltip" data-placement="top" title="欢迎欢迎">上一页</a></li>
+        <li class="div-inline bl-50"><a  class="hover" href="?page={{ post_list.next_page_number }}"  data-toggle="tooltip" data-placement="top" title="欢迎欢迎">下一页</a></li>
       {% endif %}
 
       {% if post_list.has_previous and not post_list.has_next %}
-        <li class="div-inline "><a class="hover" href="?page={{ post_list.previous_page_number }}"  data-toggle="tooltip" data-placement="top" title="2333">上一页</a></li>
+        <li class="div-inline "><a class="hover" href="?page={{ post_list.previous_page_number }}"  data-toggle="tooltip" data-placement="top" title="欢迎欢迎">上一页</a></li>
          <li class="div-inline bl-50"><a  class="hover" href="#"  data-toggle="tooltip" data-placement="top" title="没有下一页了，去看上一页">下一页</a></li>
       {% endif %}
 
       {% if post_list.has_next and not post_list.has_previous %}
       <li class="div-inline "><a class="hover" href="#"  data-toggle="tooltip" data-placement="top" title="没有上一页了，去看下一页">上一页</a></li>
-        <li class="div-inline bl-50"><a  class="hover" href="?page={{ post_list.next_page_number }}"  data-toggle="tooltip" data-placement="top" title="2333">下一页</a></li>
+        <li class="div-inline bl-50"><a  class="hover" href="?page={{ post_list.next_page_number }}"  data-toggle="tooltip" data-placement="top" title="欢迎欢迎">下一页</a></li>
       {% endif %}
       
       </div>

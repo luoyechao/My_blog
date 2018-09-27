@@ -19,17 +19,17 @@
     <link rel="stylesheet" href="/static/pygment/colorful.css" type="text/css">
 
 </head>
-<body>
+<body background="red" style="background:#000; color:#FFF"> 
 
 {% block content %}
-<div class="">
+<div class="" style="background:#000; color:#FFF">
 <div class="bl-20 br-20 ">
         <section class="post">
             <header class="post-header">
-                <h2 class="post-title">{{ post.title }}</h2>
+                <h1 class="post-title">{{ post.title }}</h1>
 
                     <p class="post-meta">
-            时间:  <a class="hover" href="#">{{ post.pub_date|date:"Y M d"}}</a> <a class="hover" href="{% url "search_tag" tag=post.category %}">{{ post.category }}</a>
+            时间:  {{ post.pub_date|date:"Y M d"}}  <a class="hover" href="{% url "search_tag" tag=post.category %}">{{ post.category }}</a>
                     </p>
             </header>
 

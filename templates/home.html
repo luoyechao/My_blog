@@ -7,8 +7,8 @@
     {% for post in post_list %}
         <section class="post">
             <header class="post-header">
-            <h3 class="div-inline">{{ post.pub_date |date:"Y M d"}}</h3>
-                <h2 class="div-inline text-c ml-30"><a class ="hover" href="{% url "detail" id=post.id %}">{{ post.title }}</a></h2>
+            <h4 class="div-inline"><i>{{ post.pub_date |date:"Y M d"}}</i></h4>
+                <h4 class="div-inline text-c ml-30"><a class ="hover" href="{% url "detail" id=post.id %}">{{ post.title }}</a></h4>
                 <div class="mt-10"></div>
 
 

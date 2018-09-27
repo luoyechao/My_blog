@@ -19,6 +19,7 @@ def home(request):
     except EmptyPage:
         post_list = paginator.paginator(paginator.num_pages)
     return render(request,'home.html',{'post_list':post_list})
+#    return self.write("hello world")
 
 
 def detail(request,id):
