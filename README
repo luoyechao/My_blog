@@ -1,0 +1,6 @@
+运行要求
+django==1.8.0
+django-ckeditor==5.4.0
+markdown
+pip install django_admin_bootstrapped
+sudo apt-get install mysql-server
